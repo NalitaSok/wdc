@@ -1,0 +1,18 @@
+Analysing Website Features
+
+The web application will be responsible for retrieving information
+about hotels based on user input. This input includes prices,location
+or the name of the hotel.The web application will also be responsible
+for remembering user searches. The hotel information can come from and can
+be stored in servers.The hotel information should be in the form of text
+and images which detail the description, cost and location of the hotel or hotel room.
+
+The client will always need to send a GET request to the server. The server can then retrieve
+information from the client through input fields on the webpage received. This is applicable when
+submitting details to sign up or book a hotel.
+
+Not all the information needs to be stored on the server. Database storage can be utilised to store
+user account-specific information such as login status. Staying logged in becomes a matter of sending 
+your cookie to the server that then uses it to bring up your information from the database such as bookings.
+
+
