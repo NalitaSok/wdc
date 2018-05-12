@@ -1,0 +1,56 @@
+/*css file for booking pages*/ 
+
+body {
+		background-color:AliceBlue;
+		font-family:montsereat;
+}
+
+table {
+		border-collapse: collapse;
+}
+
+fieldset {	
+		padding:20px;		
+}
+
+td {
+		text-align:left;
+}
+.footer {
+		float:bottom; 
+		background-color:white;
+		outline:100px solid white;
+		margin:0px;
+}
+
+.navigation {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333333;
+}
+
+.blank_row {
+		height: 15px;
+}
+
+
+
+li {
+		float: right;
+}
+
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+}
+
+li a:hover {
+		background-color: #111111;
+}
+
+

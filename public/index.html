@@ -1,0 +1,127 @@
+<!--Display homepage--> 
+
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>TravelBook - Bookings made simple </title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+         <link rel="stylesheet" type="text/css" href="index.css">
+     
+	</head>
+	
+	<body>
+		
+		<div class="nav">
+            
+            
+            <a href="signup.html" >Register</a>
+            
+			     <a href="signin.html" >Sign in</a>
+            
+			<a href="mybooking.html">My Bookings</a>
+			<a href="recentlyviewed.html">Recently Viewed</a>
+			<a class="active" href="home.html">Home</a>
+  
+		</div>
+	
+		<img src = "0bcce66d-5689-4aa1-b301-f27145edcefe.png" class = "logo" alt = "Site Logo">
+
+		<div class = "searchBox">
+			<form>
+				<label for = "Destination">Destination</label>
+				<br/>
+				<input type = "text" id = "Destination" name = "dest" placeholder = "Choose a destination">
+				<br/>
+				<label for = "Check-In">Check-In</label>
+				<input type = "date" id = "Check-In" name = "check-in">
+				<label for = "Check-Out">Check-Out</label>
+				<input type = "date" id = "Check-Out" name = "check-out">
+				<br/>
+				<label for = "Rooms">Rooms</label>
+				<br/>
+				
+				<select id = "Rooms" name = "Rooms">
+				<option value = "Single Room">Single Room</option>
+				<option value = "Double Room">Double Room</option>
+				<option value = "Family Room">Family Room</option>
+				<option value = "Multiple Rooms">Multiple Rooms</option>
+                </select>
+                <input type="button" class="btnSubmit" value="Submit" onClick="window.location = 'hotel-list.html';">
+
+					</form>
+		
+		</div>	
+		
+		<div class = "banner">
+			<img src = "hot-air-balloon-4k-31-1366x768.jpg" alt = "Banner">
+		</div>
+		
+		<div class = "empty"></div>
+		
+		
+		
+		
+		
+		<div id= "icons">
+			<i class="material-icons md-48">card_travel</i>
+			<i class="material-icons md-48">check_circle</i>
+			<i class="material-icons md-48">sync</i>
+		</div>
+		
+		<div id = "info">
+				<div id = "info1">
+				
+				<h3 id = "h3-1" >We find rooms across the globe!</h3>
+				<p id = "p-1">We finds and compare hotel rooms with one simple search. </p>
+				
+				</div>
+				
+				
+				<div id = "info2">
+				<h3 id="h3-2">Cheapest price possible</h3>
+				<p id="p-2">No mark-up or booking fee, allowing you to book rooms at the cheapest price! </p>
+				
+				</div>
+				
+				<div id = "info3">
+				<h3 id="h3-3">24-hour support</h3>
+				<p id="p-3">Our dedicated support team is here to answer all your queries all day, every day.</p>
+				</div>
+			
+		</div>
+	
+		
+		<div id="trending">
+			<h3>Top Destinations</h3>
+		</div>
+		
+		<div id = "trendingImages">
+			<img src = "france.jpg" alt = "Paris">
+			<img src = "dubai.jpg" alt = "Dubai">
+			<img src = "maxresdefault.jpg" alt = "London">
+			<img src = "berlin.jpg" alt = Berlin>
+		</div>
+		
+		<div class = "footer">
+			<div class = "footerText">
+				<p>Community</p>
+				<p>Legal</p>
+				<p>About Us</p>
+				<p>Legal</p>
+				<p>Sponsors</p>
+			</div>
+		
+		
+		
+		</div>
+			
+		<script src = "home.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</body>
+
+
+</html>

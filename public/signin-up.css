@@ -1,0 +1,226 @@
+/*Styling for both signup and signin page*/ 
+body {
+    font-family: montserrat;
+}
+
+
+/*Width of the input field*/ 
+input[type=text], input[type=password] {
+
+    width: 95%;
+    padding: 12px 20px;
+    margin: 9px ;
+    display: inline-block;
+    /*border: 1px solid ;*/
+    box-sizing:border-box;
+}
+
+input[type=checkbox] {
+    margin: 9px; 
+}
+
+
+/*set the style of all the buttons*/ 
+button {
+    background-color: #989898;
+    color: white;
+    padding: 14px 15px; 
+    margin: 9px ;
+    border: none;
+    cursor: pointer;
+    width:  70%; 
+}
+
+.submitbutton {
+    text-align: center; 
+}
+
+.logbtn {
+    position: relative;
+    left: 900px;
+    
+}
+
+.signupbtn {
+    float:right; 
+}
+
+
+button:hover {
+    opacity: 0.7;
+}
+
+/*.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: orangered;
+}*/ 
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.modal {
+    display: none; /*hidden*/ 
+    position: fixed;
+    z-index: 1;  /*front display*/ 
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    overflow: auto; /*scroll enable for more details*/ 
+    /*background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.3); /*black with opacity*/ 
+    padding-top: 60px;
+    }
+
+.container {
+    margin: 10px; 
+}
+
+
+
+/*center the links*/ 
+/*sign up page title centered*/ 
+.signup-in {
+    text-align:center;  
+} 
+
+/*Terms and condition*/ 
+.sign-container{
+    text-align:center; 
+    position:relative; 
+    margin:10px; 
+} 
+
+.password  {
+position: relative;
+bottom: 20px;
+}
+
+.signup {
+    position: relative;
+    bottom:10px;
+}
+
+
+
+
+
+/*Login content box*/ 
+
+.login-content {
+    background-color: #F5F5F5;
+    margin: 5% auto 15% auto; /* 5% from the top and 15% from the bottom and centered*/ 
+    border: 1px solid grey; 
+    width: 35%;
+}
+
+
+/*.close {
+    position: relative;
+    left: 400px;
+    top: -40px;
+    color: darkslategrey;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.close:focus {
+    color: red;
+    cursor: pointer; 
+}*/ 
+
+/*for small screens*/ 
+@media screen and (max-width: 300px) {
+    span.password {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+
+/*sign up page start*/ 
+
+.separator {
+    margin: 20px 0;
+    border-top: 1px solid #CCCCCC;
+    position:relative;
+}
+
+.separator-text {
+    display: block;
+    position: absolute;
+    top: -11px; /*In the middle*/ 
+    left: 50%; 
+    margin-left: -22px;
+    padding: 0px 10px;
+    background: #F5F5F5;
+}
+
+
+.social-login , .social-btn {
+    padding: 10px 25px;
+     color: #F5F5F5;
+    display:block;
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+.google-btn {
+    background-color:#dd4b39; 
+}
+
+.facebook-btn {
+    background-color: #3b5998; 
+}
+
+
+/*hotel list section*/ 
+/* Style the input field */
+  #inputLoc {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+  }
+
+
+
+
+
+
+
+
+
+
+

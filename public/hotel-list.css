@@ -1,0 +1,380 @@
+/*styling for hotel-list*/ 
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FAFAFA;
+	font-family: "Montserrat";
+}
+
+.nav {
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.8;
+
+}
+
+.nav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 30px 40px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: sandybrown;
+}
+
+.nav a:after {
+	content = "";
+	display: block;
+	clear: right;
+}
+
+.logo {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -34px;
+	
+}
+
+/* SearchBox on side */
+
+.searchBox, .refine, .priceRefine {
+	max-width: 200px;
+	background-color: black;
+	color: white;
+	opacity: 0.8;
+	border-radius: 5px;
+	margin-left: 50px;
+	margin-top: 50px;
+	padding: 20px 30px 50px 30px;
+	
+}
+
+
+
+input[type=text]{
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 4px;
+}
+
+input[type=date] {
+	display: block;
+	margin-bottom: 25px;
+	
+}
+
+.searchBox select {
+	margin-bottom: 20px;
+	margin-right: 20px;
+	
+}
+
+.refine {
+	margin-top: 5px;
+}
+
+.refineContainer {
+	float: left;
+}
+
+
+.hotelContainer {
+	margin-left: 360px;
+	margin-right: 50px;
+	margin-top: 50px;
+	height: 700px; /*however long the info is */
+	border: 1px solid black;
+}
+
+/*hotel display*/ 
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+/*slider*/ 
+.slider:hover {
+    opacity: 1;
+}
+
+/*for chrome, safari*/
+.slider::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    appearance:none;
+    width:10px;
+    height:10px;
+    background: #1E90FF;
+    cursor:pointer; /*cursor when hover*/ 
+}
+
+/*range*/ 
+.slider::-moz-range-thumb {
+    width:20px;
+    height:20px;
+    background: #4CAF50;
+    cursor:pointer; 
+}
+
+.slidediv {
+    display:inline-block;
+    position:relative;
+    top:100px;
+    left:-20px;
+}
+
+
+.sideWrapper {
+    position: relative;
+    top:260px;
+    left:100px; 
+    height:600px;
+    width:320px;
+    text-align: left;
+    background:white; 
+    margin-top: -15vh;
+  z-index: 1;
+    
+}
+
+
+
+.dropbtn {
+    position:relative;
+    top:-280px;
+    background-color: #1E90FF;
+    color:white;
+    padding:10px 90px;
+    border:none;
+    cursor:pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+    top:140px;
+}
+
+.dropContent {
+    display:none;
+    position:absolute;
+    background-color: whitesmoke;
+    top:-245px;
+    min-width: 160px;
+    overflow:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    /*bring it forward*/
+    z-index:1;
+}
+
+.dropContent a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block; 
+}
+
+
+.show {display:block;}
+
+
+/*hotel section*/ 
+
+/*image*/
+
+.resort {
+    position:relative;
+    
+    left:-40px; 
+    width:270px;
+    height:272px; 
+}
+
+
+
+.hotelSection {
+    position:relative;
+    top:-30px;
+    left:-00px;
+    background:white;
+    height:272px; 
+    width:702px;
+}
+
+
+
+
+/*button inside the hotel list*/ 
+.quick {
+    position:relative;
+    top:-339px;
+    left:230px; 
+    width:239px;
+    height:49px;
+    background-color:#A9CCE3;
+    cursor:pointer;
+}
+
+.view {
+    position:relative;
+    top:-339px;
+    left:225px;
+    width:235px;
+    height:49px;
+    background-color:#D7DBDD ;
+    cursor:pointer;
+    border: 1px solid grey;  
+    border-width: 0px 1px 0px 0px;
+}
+
+.infoHotel {
+    position: relative;
+    top:-336px;
+    left:229px; 
+    width:473px;
+    height:163px;
+    border: 1px solid grey;
+    border-width: 1px 1px 0px 0px;
+}
+
+.nameInfo {
+    position:relative;
+    text-align: center;
+    top:-276px;
+    left:230px;
+    width:245px;
+    height:60px;
+    border: 1px solid grey;
+    border-width: 1px 0px 0px 0px;
+    
+}
+
+.priceInfo {
+    position:relative;
+    text-align:center;
+    top:-337px;
+    left:455px;
+    width:247px;
+    height:60px;
+    border: 1px solid grey;
+    border-width: 1px 1px 0px 0px;
+    
+}
+
+
+.second {
+    position: relative;
+    top:60px; 
+}
+
+.third {
+    position:relative;
+    top:120px; 
+}
+
+.hotelContainer {
+    border: none;
+}
+
+
+
+
+#map {
+        height: 150px;
+        width:200px;
+        
+      }
+      /* Optional: Makes the sample page fill the window. */
+     /* #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+*/ 
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto; 
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 0px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 200px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+
+
+.informationBox {
+    background-color:black;
+    position:relative;
+    width:190px;
+    top: 20px; 
+    
+}
+
+
+
+
+

@@ -1,0 +1,174 @@
+<!--user can make booking on this page--> 
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" type="text/css" href="booking.css">
+    <meta charset = "UTF-8">
+    <title>Booking</title>
+
+</head>
+<body>
+
+
+	
+<table style="width:100%; margin-bottom:200px; margin-top:50px;">
+	<tr>
+		<td></td>
+		<td style="font-size:300%;">Secure Booking</td>
+	</tr>
+	
+	<tr>
+		<td style="vertical-align: top;">
+			<div style="margin-top:20px; margin-right:200px; float:right;">
+			<img src="images/treeHouse.jpeg" alt="Tree House" style="float:top;">
+			<table>
+				<tr>
+					<td colspan="2"><b>1 Apartment:</b> (insert apartment type)</td>
+				</tr>
+				<tr class="blank_row"><td colspan="2"></td></tr>
+				<tr>
+					<td colspan="2"><b>Check-in:</b> (insert date)</td>
+				</tr>
+				<tr>
+					<td colspan="2"><b>Check-out:</b> (insert date)</td>
+				</tr>
+				<tr>
+					<td colspan="2">#-night stay</td>
+				</tr>
+				<tr class="blank_row"><td colspan="2"></td></tr>
+				<tr class="blank_row"><td colspan="2"></td></tr>
+				<tr>
+					<td colspan="2">Price Breakdown:</td>
+				</tr>
+				<tr class="blank_row"><td colspan="2"></td></tr>
+				<tr>
+					<td colspan="2"><b>Room Type:</b> #Peeps</td>
+				</tr>
+				<tr>
+					<td>#-nights</td>
+					<td style="text-align: right">AU$Monies</td>
+				</tr>
+				<tr>
+					<td>Taxes</td>
+					<td style="text-align: right">AU$Monies</td>
+				</tr>
+				<tr class="blank_row"><td colspan="2" style="border-bottom:1px solid Gray"></td></tr>
+				<tr>
+					<td colspan="2" style="text-align: right">Total due at Hotel: <b>AU$Monies</b></td>
+				</tr>
+			</table>
+			</div>
+		</td>
+		<td>
+			<table>
+				<tr class="blank_row"><td></td></tr>
+				<tr class="blank_row"><td></td></tr>
+				<tr>
+					<td style="background-color:white; outline:20px solid white;">
+						<form action="/we_dont_actually_collect_sensitive_info_since_this_is_a_fun_project.php">
+							<b>Room Type:</b> 
+                            <br><br>
+							<fieldset>
+								<legend>Contact information:</legend>
+								First name:<br>
+								<input type="text" name="first_name"><br>
+								Last name:<br>
+								<input type="text" name="last_name"><br><br>
+								Mobile phone number:<br>
+								<select name="area_code">
+									<option value="Aus">AUS +61</option>
+								</select>
+								<input type="text" name="phone_number"><br><br>
+								<input type="checkbox" name="alert_customer" value="Alert"> Recieve text alerts from hotel.<br>
+							</fieldset>
+							<br><br><br>
+							<fieldset>
+								<legend>Payment information</legend>
+								Name of cardholder:<br>
+								<input type="text" name="cardholder_name"><br><br>
+								Debit/Credit card number:<br>
+								<input type="text" name="card_number"><br><br>
+								Expiry date:<br>
+								<select name="card_expiry_month">
+									<option value="Jan">01</option>
+									<option value="Feb">02</option>
+									<option value="Mar">03</option>
+									<option value="Apr">04</option>
+									<option value="May">05</option>
+									<option value="Jun">06</option>
+									<option value="Jul">07</option>
+									<option value="Aug">08</option>
+									<option value="Sep">09</option>
+									<option value="Oct">10</option>
+									<option value="Nov">11</option>
+									<option value="Dec">12</option>
+								</select>
+								<select name="card_expiry_year">
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2021">2021</option>
+									<option value="2022">2022</option>
+									<option value="2023">2023</option>
+									<option value="2024">2024</option>
+									<option value="2025">2025</option>
+									<option value="2026">2026</option>
+									<option value="2027">2027</option>
+									<option value="2028">2028</option>
+									<option value="2029">2029</option>
+								</select><br><br>
+								Security code:<br>
+								<input type="text" name="cvv"><br><br>
+							</fieldset>
+							<br><br><br>
+							<fieldset>
+								<legend>Important Information</legend>
+								<br>
+								<i>You will recieve an email confirming your booking once you proceed</i><br><br><br>
+								
+                                <input type="checkbox" name="terms" value="agree"><i>By checking this box you agree to our </i><i title="You're not actually going to book accomodation, whis website is just a fun project." style="color:SlateBlue;"></i><i>Terms and Conditions </i>.<br><br><br>
+								
+							
+								<input type = "button" value = "confirm" onclick = "window.location = 'bookingConfirm.htm';">
+							
+								
+							</fieldset>
+                        </form>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+	
+			
+</table>
+	
+<div class="footer">
+</div>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

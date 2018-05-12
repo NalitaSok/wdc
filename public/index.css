@@ -1,0 +1,319 @@
+/*styling for homepage*/ 
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FAFAFA;
+	font-family: "Montserrat";
+}
+
+.nav {
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.8;
+
+}
+
+.nav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 30px 40px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: sandybrown;
+}
+
+.nav a:after {
+	content = "";
+	display: block;
+	clear: right;
+}
+
+.logo {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -34px;
+	
+}
+.searchBox {
+	max-width: 50%;
+	background-color: black;
+	color: white;
+	opacity: 0.8;
+	border-radius: 5px;
+	margin: auto;
+	padding: 30px 60px 30px 60px;
+	margin-top: 50px;
+    left: 0px;
+    top: 0px;
+ 
+	
+}
+
+.searchBox form #Destination {
+	margin-top: 10px;
+	margin-bottom: 35px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width: 100%;
+}
+
+.searchBox form #Check-In, .searchBox form #Check-Out {
+	margin-right: 90px;
+	margin-bottom: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.searchBox select {
+	display: block;
+	margin-bottom: 70px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 100px;
+}
+
+input[type=submit] {
+	padding-top: 5px;
+	padding-bottom:5px;
+	width: 100%;
+	font-size: 20px;
+}
+
+input[type=submit]:hover {
+	background-color: sandybrown;
+}
+
+.banner img {
+	height: 650px;
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	z-index:-1;
+	
+}
+
+.empty {
+	height: 45px;
+}
+
+
+	
+.material-icons.md-48 {
+	font-size: 48px;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+
+}
+
+#icons {
+	text-align: center;
+	
+}
+
+
+
+#info1, #info2, #info3 {
+	width: 20%;
+	float: left;
+	margin-left: 10%;
+	text-align: center;
+}
+
+#info:after {
+	content:"";
+	display: block;
+	clear:left;
+}
+
+
+
+
+
+
+#trending {
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+#trendingImages {
+	margin-left:100px;
+}
+
+img {
+	width: 275px;
+	height: 175px;
+	
+}
+
+#trendingtext {
+}
+
+.footer {
+	color:white;
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	opacity: 0.8;
+	margin-top: 50px;
+}
+
+.footerText {
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 5px;
+}
+
+/*log in section*/ 
+
+/*Width of the input field*/ 
+input[type=text], input[type=password] {
+
+    width: 95%;
+    padding: 12px 20px;
+    margin: 9px ;
+    display: inline-block;
+    /*border: 1px solid ;*/
+    box-sizing:border-box;
+}
+
+input[type=checkbox] {
+    margin: 9px; 
+}
+
+/*set the style of all the buttons*/ 
+button {
+    background-color: #989898;
+    color: white;
+    padding: 14px 15px; 
+    margin: 9px ;
+    border: none;
+    cursor: pointer;
+    width:  70%; 
+}
+
+.submitbutton {
+    text-align: center; 
+}
+
+
+.logbtn {
+    position: relative;
+    left: 900px; 
+} 
+
+
+button:hover {
+    opacity: 0.7;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.modal {
+    
+    position: absolute;  /*front display*/ 
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    overflow: auto; /*scroll enable for more details*/ 
+    background-color: rgba(0,0,0,0.3); /*black with opacity*/ 
+    padding-top: 60px;
+    }
+
+.container {
+    margin: 10px;
+}
+
+.signin {
+    z-index: 10;
+}
+
+/*center the links*/ 
+/*sign up page title centered*/ 
+.signup-in {
+    text-align:center;  
+} 
+
+/*Terms and condition*/ 
+.sign-container{
+    text-align:center; 
+    position:relative; 
+    margin:10px; 
+} 
+
+.password  {
+position: relative;
+bottom: 20px;
+}
+
+.signup {
+    position: relative;
+    bottom:10px;
+}
+
+
+/*Login content box*/ 
+
+.login-content {
+    background-color: #F5F5F5;
+    margin: 5% auto 15% auto; 
+    border: 1px solid grey; 
+    width: 35%;
+}
+
+
+/*for small screens*/ 
+@media screen and (max-width: 300px) {
+    span.password {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
