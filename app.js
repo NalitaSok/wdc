@@ -14,6 +14,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/part3-2');
 var db = mongoose.connection; 
 //var logger = require('morgan');
+var User = require('./models/user'); 
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -42,7 +43,7 @@ app.use(session({
     secret: 'secret',
     saveUninitialized: true,
     resave: true
-})); 
+}));  
 
 //Passport initialisation
 app.use(passport.initialize());
@@ -78,8 +79,92 @@ app.use(function (req,res,next) {
     next(); 
 }); 
 
+//Register User 
+app.post('/register',function(req,res){
+    var name = req.body.name;
+    var email = req.body.email;
+    var username = req.body.username;
+    var password = req.body.password;
+    var password2 = req.body.password2; 
+    
+    //Validation
+    req.checkBody('name', 'Name is required').notEmpty(); 
+    req.checkBody('email','Email is required').notEmpty();
+    req.checkBody('email','Email is not valid').isEmail();
+    req.checkBody('username','Username is required').notEmpty(); 
+    req.checkBody('password','Password is required').notEmpty();
+    req.checkBody('password2','Password does not match').equals(req.body.password); 
+    
+    var errors = req.validationErrors(); 
+    
+    if(errors){
+        res.render('register',{
+            errors:errors
+        }); 
+    } else{
+        var newUser = {
+            name:name,
+            email:email,
+            username:username,
+            id:null,
+            password: password
+        }; 
+        
+        User.createUser(newUser,function(err,user){
+            if(err) throw err;
+            console.log(user); 
+        }); 
+        
+        req.flash('success_msg','You are registered and can now login');
+        
+        res.redirect('/login'); 
+    }
+});
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+
+passport.use(new LocalStrategy(
+	function (username, password, done) {
+        console.log("Start"); 
+		User.getUserByUsername(username, function (err, user) {
+            console.log("Start1");
+			if (err) throw err;
+            console.log(user);  
+			if (!user|| user===undefined) {
+                console.log("user1");  
+				return done(null, false, { message: 'Unknown User' });
+
+			}
+
+			User.comparePassword(password, user.password, function (err, isMatch) {
+				if (err) throw err;
+				if (isMatch) {
+					return done(null, user);
+                    console.log("isMatch"); 
+				} else {
+					return done(null, false, { message: 'Invalid password' });
+                    console.log("Invalid pass"); 
+				}
+			});
+		});
+	}));
+
+
+passport.serializeUser(function (user, done) {
+	done(null, user.username);
+   // done(null,user); 
+    console.log("serial"); 
+});
+
+passport.deserializeUser(function (id, done) {
+	User.getUserByUsername(id, function (err, user) {
+         console.log("deserial"); 
+		done(err, user);
+	});
+}); 
+
+
+app.use('/users', passport.authenticate('local', { failureRedirect: '/login' }), usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
