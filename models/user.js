@@ -28,6 +28,7 @@ var User = {"a":{
             password: "a"
         }}; 
 
+
 module.exports.createUser = function(newUser, callback){
 	bcrypt.genSalt(10, function(err, salt) {
 	    bcrypt.hash(newUser.password, salt, function(err, hash) {
@@ -39,6 +40,7 @@ module.exports.createUser = function(newUser, callback){
 }
 
 module.exports.getUserByUsername = function(username, callback){
+    console.log(username); 
     console.log("getUserUser"); 
     callback(null, User['username']);
 }
