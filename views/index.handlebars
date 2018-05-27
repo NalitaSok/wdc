@@ -1,4 +1,248 @@
- <h2 class="page-header">Loggin in successfully</h2>
-<p>Welcome to your profile</p>  
+ <!--<h2 class="page-header">Loggin in successfully</h2>--> 
+<!--<p>Welcome to your profile</p>  --> 
 
-<li role="presentation"><a href="/users/logout">Logout</a></li>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+		<meta charset = "UTF-8">
+		<title>TravelBook - Bookings made simple </title>
+		<link href = "/css/hotel-list.css" rel = "stylesheet" type = "text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <style>
+    
+    
+    
+    </style>
+    
+</head>
+    
+    
+
+<body>
+	<div class="nav">
+            
+            
+         <!--   <a href="/users/register" >Register</a>
+            
+			     <a href="/users/login" >Sign in</a>--> 
+            
+			<!--<a href="mybooking.html">My Bookings</a>--> 
+			<!--<a href="recentlyviewed.html">Recently Viewed</a>--> 
+			<!--<a class="active" href="index.html">Home</a>--> 
+            <a href="/users/logout">Logout</a>
+        
+		</div>
+	
+		<img src = "/css/0bcce66d-5689-4aa1-b301-f27145edcefe.png" class = "logo" alt = "Site logo">
+
+			<div class = "refineContainer">
+				<div class = "searchBox">
+					<form>
+						<label for = "Destination">Destination</label>
+						<br/>
+						<input type = "text" id = "Destination" name = "dest" placeholder = "Choose a destination">
+						<br/>
+						<label for = "Check-In">Check-In</label>
+						<input type = "date" id = "Check-In" name = "check-in">
+						<label for = "Check-Out">Check-Out</label>
+						<input type = "date" id = "Check-Out" name = "check-out">
+						<br/>
+						<label for = "Rooms">Rooms</label>
+						<br/>
+						
+						<select id = "Rooms" name = "Rooms">
+							<option value = "Single Room">Single Room</option>
+							<option value = "Double Room">Double Room</option>
+							<option value = "Family Room">Family Room</option>
+							<option value = "Multiple Rooms">Multiple Rooms</option>
+						</select>
+						
+						<input type = "Submit" value = "Submit" action = "hotel-list.html">
+					</form>
+		
+				</div>	
+	
+			
+	
+				<div class = "refine">
+					<h4>Refine Search </h4>
+					<hr>
+					<h4>Hotel Class</h4>
+					<label class="container">One
+  						<input type="checkbox">
+  						<span class="onestar"></span>
+					</label>
+					<br/>
+					
+					<label class="container">Two
+					  <input type="checkbox">
+					  <span class="twostar"></span>
+					</label>
+					<br/>
+					
+					<label class="container">Three
+					  <input type="checkbox">
+					  <span class="threestar"></span>
+					</label>
+					<br/>
+					
+					<label class="container">Four
+						 <input type="checkbox">
+						 <span class="fourstar"></span>
+					</label>
+					<br/>
+					
+					<label class="container">Five
+						 <input type="checkbox">
+						 <span class="fivestar"></span>
+					</label>
+
+					<hr>
+					<h4>Price per night</h4>
+					<label class="container">AUD $0 - AUD $99
+  						<input type="checkbox">
+  						<span class="cheap"></span>
+					</label>
+					<br/>
+					
+					<label class="container"> AUD $100 - AUD $299
+					  <input type="checkbox">
+					  <span class="normal"></span>
+					</label>
+					<br/>
+					
+					<label class="container">AUD $300+
+					  <input type="checkbox">
+					  <span class="expensive"></span>
+					</label>
+					<br/>
+                    
+                    <!--Google map section--> 
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                    <br> 
+                <div id="map"></div>
+	               
+<form class="informationBox">
+<input type="text" placeholder="Add information here">
+
+<input type="button" value= "Add information" onclick="addTextBox()">
+</form>
+	
+				</div>
+			</div>
+	
+			<div class = "hotelContainer">
+
+        <div class="hotelList">
+            <ul>
+            <li>
+                <div class="hotelSection">
+                <article>
+                    <div class="imageDis">
+               <img src="/css/image.jpg" class="resort" alt="image"> 
+                    </div>
+                    <div class="nameInfo">
+                    <h3 class="name"> The Hotel Name</h3>
+                        </div>
+                    <div class="priceInfo">
+                    <h3 class="pricetag">AU$200</h3>
+                    </div>
+                        <section>
+                    <div class="infoHotel">    
+                    <pre> Word info</pre>
+                        </div>
+                    </section>
+                    <div>
+                  <!--  <button type="button" class="quick">
+                        QUICKVIEW
+                        </button>--> 
+                        <button type="button" class="view" onClick="window.location = 'booking.htm';">
+                        BOOK HOTEL
+                        </button>
+                    </div>
+                </article>
+                                </div>
+
+                </li>
+                <li class="second">
+                <div class="hotelSection">
+                <article>
+                    <div class="imageDis">
+               <img src="/css/image.jpg" class="resort" alt="image"> 
+                    </div>
+                    <div class="nameInfo">
+                    <h3 class="name"> The Hotel Name</h3>
+                        </div>
+                    <div class="priceInfo">
+                    <h3 class="pricetag">AU$200</h3>
+                    </div>
+                        <section>
+                    <div class="infoHotel">    
+                    <pre> Word info</pre>
+                        </div>
+                    </section>
+                    <div>
+                   <!-- <button type="button" class="quick">
+                        QUICKVIEW
+                        </button>--> 
+                        <button type="button" class="view">
+                        BOOK HOTEL
+                        </button>
+                    </div>
+                </article>
+                                </div>
+
+                </li>
+                <li class="third">
+                <div class="hotelSection">
+                <article>
+                    <div class="imageDis">
+               <img src="/css/image.jpg" class="resort" alt="image"> 
+                    </div>
+                    <div class="nameInfo">
+                    <h3 class="name"> The Hotel Name</h3>
+                        </div>
+                    <div class="priceInfo">
+                    <h3 class="pricetag">AU$200</h3>
+                    </div>
+                        <section>
+                    <div class="infoHotel">    
+                    <pre> Word info</pre>
+                        </div>
+                    </section>
+                    <div>
+                    <!--<button type="button" class="quick">
+                        QUICKVIEW
+                        </button>--> 
+                        <button type="button" class="view">
+                        BOOK HOTEL
+                        </button>
+                    </div>
+                </article>
+                                </div>
+
+                </li>
+                
+        
+            </ul>
+        
+        </div>
+	
+	
+			</div>
+	
+	   <script src = "/css/hotel-list.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy4zyRGDVMaQO2vfyLzbtlbCAG5kSVhOs&libraries=places&callback=initAutocomplete"
+         async defer></script>
+    
+    
+</body>
+
+    
+</html>
+
